@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #fff;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.intro {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/cover.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cover.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    margin-bottom: 30px;
+}
+
+/* Reusable components */
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+    text-align: center;
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 5px;
+    color:#2980b9;
+}
+
+/* Main navigation */ 
+
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 40px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #000;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid #2980b9;
+}
+
+.searchbar {
+    margin-top: 40px;
+    float: right;
+}
+
+.searchbar input {
+    padding: 3px;
+    font-size: 90%;
+}
+
+/* Logo */ 
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* cars */
+
+.Wineries {
+    margin-bottom: 50px;
+}
+
+/* Normalise */
+
+input[type="search"] {
+	/*-webkit-appearance: textfield;*/
+	box-sizing: content-box;
+}
+
+input {
+	line-height: normal;
+}
+
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button, html, input[type="button"], input[type="reset"], input[type="submit"] {
+	/*-webkit-appearance: button;*/
+	cursor: pointer;
+}
+
+/* Grid */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Row */
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+/* Col */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+/* Span 2 */
+
+.span-2-of-2 {
+	width: 100%;
+}
+
+.span-1-of-2 {
+	width: 49.2%;
+}
+
+/* Span 3 */
+
+.span-3-of-3 {
+	width: 100%; 
+}
+
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+	width: 32.26%; 
+}
+
+/* Span 4 */
+
+.span-4-of-4 {
+	width: 100%; 
+}
+
+.span-3-of-4 {
+	width: 74.6%; 
+}
+
+.span-2-of-4 {
+	width: 49.2%; 
+}
+
+.span-1-of-4 {
+	width: 23.8%; 
+}
