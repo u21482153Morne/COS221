@@ -1,0 +1,127 @@
+.theme-switcher {
+    margin-top: 10px;
+}
+
+.theme-switcher button {
+    padding: 5px;
+    border-radius: 5%;
+    margin-left: 10px;
+    border: none;
+}
+
+/* Light theme variables */
+[data-theme="light"] {
+    --main-bg-color: #f1f1f1;
+    --main-text-color: #000000;
+    --hover-bg-color: #e1e1e1;
+    --logo-light-display: none;
+    --logo-dark-display: block;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --main-bg-color: #333333;
+    --main-text-color: #ffffff;
+    --hover-bg-color: #444444;
+    --logo-light-display: block;
+    --logo-dark-display: none;
+}
+
+.auth-nav li a, #wine-type, #season, #sort-by, #save-preferences-btn, #verified, footer button, .theme-switcher button {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+#wine-type:hover, #verified:hover, #season:hover, #sort-by:hover, #save-preferences-btn:hover, .auth-nav li a:hover, .theme-switcher button:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--main-text-color);
+}
+
+#logo-light {
+    display: var(--logo-light-display);
+}
+
+#logo-dark {
+    display: var(--logo-dark-display);
+}
+
+.main-nav li a {
+    color: var(--main-text-color);
+}
+
+[data-theme="dark"] h3 {
+    color: var(--main-text-color);
+}
+
+[data-theme="dark"] body {
+    background-color: #222222;
+    color: var(--main-text-color);
+}
+
+[data-theme="dark"] #search-input {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border-color: #222222;
+}
+
+[data-theme="dark"] .search-button {
+    background-color: var(--main-bg-color);
+    color: #696969;
+}
+
+[data-theme="dark"] .main-nav li a {
+    color: var(--main-text-color);
+}
+
+[data-theme="dark"] footer {
+    background-color: #000000;
+    color: var(--main-text-color);
+}
+
+[data-theme="dark"] th {
+    background-color: #2a2a2a;
+    color: grey;
+}
+
+
+[data-theme="dark"] tbody tr {
+    background-color: #323232;
+    color: darkgrey;
+}
+
+[data-theme="dark"] tbody td {
+    border: 1px solid #111111;
+}
+
+[data-theme="dark"] th input, th button {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+[data-theme="dark"] .contact-form select, .contact-form textarea, .contact-form .sbtn, .contact-form input {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border:none;
+
+}
+
+[data-theme="dark"] .rating {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border: none;
+}
+
+[data-theme="dark"] .rating:hover {
+    background-color: var(--hover-bg-color);
+}
+
+[data-theme="light"] .rating {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border: none;
+}
+
+[data-theme="light"] .rating:hover {
+    background-color: var(--hover-bg-color);
+}
+
